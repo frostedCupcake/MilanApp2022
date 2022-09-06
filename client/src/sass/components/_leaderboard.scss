@@ -1,0 +1,20 @@
+.leaderboard {
+  padding: 15rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey-light-1;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
+  &__heading {
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+    margin-bottom: 8rem;
+    @include respond(phone) {
+      margin-bottom: 5rem;
+    }
+  }
+}

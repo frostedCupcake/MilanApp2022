@@ -1,0 +1,31 @@
+$size-width: 70rem;
+$size-height: 50rem;
+
+.section__carousel {
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light,
+      $color-secondary-dark
+    ),
+    url(../assets/events/iithbackground.jpg);
+  padding: 15rem 0;
+  margin-bottom: -1rem;
+}
+
+.slider {
+  width: 65rem;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  &__img {
+    border-radius: 5px;
+  }
+  @include respond(tab-port) {
+    width: 40rem;
+  }
+  @include respond(phone) {
+    width: 30rem;
+  }
+}

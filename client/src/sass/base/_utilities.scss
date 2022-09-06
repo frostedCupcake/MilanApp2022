@@ -1,0 +1,65 @@
+.grid {
+  display: grid;
+  gap: 10rem;
+  max-width: 135rem;
+  margin: 0 auto;
+  @include respond(tab-land) {
+    max-width: 50rem;
+  }
+  @include respond(phone) {
+    max-width: 40rem;
+  }
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  @include respond(tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80rem;
+  }
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 30rem;
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}

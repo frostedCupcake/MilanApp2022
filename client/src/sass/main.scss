@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/navbar";
+@import "components/header";
+@import "components/button";
+@import "components/footer";
+@import "components/section1";
+@import "components/carouse";
+@import "components/leaderboard";
+@import "components/members";
+@import "components/sponsors";
+@import "components/liveScores";
+
+@import "pages/home";
