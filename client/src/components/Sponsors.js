@@ -12,39 +12,69 @@ const Sponsors = () => {
     <section className="sponsors">
       <h2 className="heading-secondary sponsors__heading">Sponsors</h2>
       <div class="grid grid-3">
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">Alumin</h3>
           <div class="square">
             <img class="square__image" src={logo1} alt="" />
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">gouravs</h3>
           <div class="square">
             <img class="square__image" src={logo2} alt="" />
           </div>
         </div>
 
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">sachdev</h3>
           <div class="square">
             <img class="square__image" src={logo3} alt="" />
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">sakthi</h3>
           <div class="square">
             <img class="square__image" src={logo4} alt="" />
           </div>
         </div>
 
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">SBI</h3>
           <div class="square">
             <img class="square__image" src={logo5} alt="" />
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          style={{
+            backgroundColor: "#1b1a17",
+          }}
+        >
           <h3 class="title">Tihan</h3>
           <div class="square">
             <img class="square__image" src={logo6} alt="" />

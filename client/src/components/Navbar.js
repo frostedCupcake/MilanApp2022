@@ -16,38 +16,33 @@ const Navbar = () => {
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="/" class="navigation__link">
+            <a href="/milan/" class="navigation__link">
               Home
             </a>
           </li>
           <li class="navigation__item">
-            <a href="/schedule" class="navigation__link">
+            <a href="/milan/schedule" class="navigation__link">
               Schedule
             </a>
           </li>
           <li class="navigation__item">
-            <a href="/events" class="navigation__link">
+            <a href="/milan/events" class="navigation__link">
               Events
             </a>
           </li>
           <li class="navigation__item">
-            <a href="/leader-board" class="navigation__link">
-              LeaderBoard
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="/sponsors" class="navigation__link">
+            <a href="/milan/sponsors" class="navigation__link">
               Sponsors
             </a>
           </li>
           <li class="navigation__item">
-            <a href="/members" class="navigation__link">
+            <a href="/milan/members" class="navigation__link">
               Team
             </a>
           </li>
           <li class="navigation__item">
             <a
-              href="https://heyzine.com/flip-book/d540bc9897.html"
+              href="https://heyzine.com/flip-book/59f3755f85.html"
               class="navigation__link"
             >
               Rulebook

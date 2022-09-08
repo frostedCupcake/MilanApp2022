@@ -9,12 +9,11 @@ import Schedule from "./components/Schedule";
 import Events from "./components/Events";
 import "./css/tabs/tab_group1.css";
 import "./css/tabs/tab_group2.css";
-import LiveScores from "./components/LiveScores";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/milan">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/members" element={<Members />} />
-          <Route path="/leader-board" element={<LiveScores />} />
         </Routes>
         <Footer />
       </Router>

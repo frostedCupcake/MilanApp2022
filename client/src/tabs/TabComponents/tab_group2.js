@@ -3,6 +3,10 @@ import FirstTab from "../overall/sports_boys";
 import SecondTab from "../overall/sports_girls";
 import ThirdTab from "../overall/culty";
 import FourthTab from "../overall/techy";
+import Culty from "../../components/culti/Scores";
+import Techy from "../../components/techy/Scores";
+import SportsB from "../../components/sports/ScoresB";
+import SportsG from "../../components/sports/ScoresG";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -25,28 +29,36 @@ const Tabs = () => {
   };
   return (
     <div className="Tabs2">
-      <h2 className="heading-secondary leaderboard__heading">Events</h2>
+      <h2
+        className="heading-secondary leaderboard__heading"
+        style={{
+          color: "#ffc93c",
+          borderBottom: "2px solid #ffc93c",
+        }}
+      >
+        Events
+      </h2>
       <ul className="nav2">
         <li
-          className={activeTab === "tab1" ? "active" : ""}
+          className={activeTab === "tab1" ? "active" : "text-gold"}
           onClick={handleTab1}
         >
           Sports Boys
         </li>
         <li
-          className={activeTab === "tab2" ? "active" : ""}
+          className={activeTab === "tab2" ? "active" : "text-gold"}
           onClick={handleTab2}
         >
           Sports Girls
         </li>
         <li
-          className={activeTab === "tab3" ? "active" : ""}
+          className={activeTab === "tab3" ? "active" : "text-gold"}
           onClick={handleTab3}
         >
           Culty
         </li>
         <li
-          className={activeTab === "tab4" ? "active" : ""}
+          className={activeTab === "tab4" ? "active" : "text-gold"}
           onClick={handleTab4}
         >
           Techy
@@ -55,13 +67,25 @@ const Tabs = () => {
 
       <div className="outlet">
         {activeTab === "tab1" ? (
-          <FirstTab />
+          <div>
+            <FirstTab />
+            <SportsB />
+          </div>
         ) : activeTab === "tab2" ? (
-          <SecondTab />
+          <div>
+            <SecondTab />
+            <SportsG />
+          </div>
         ) : activeTab === "tab3" ? (
-          <ThirdTab />
+          <div>
+            <ThirdTab />
+            <Culty />
+          </div>
         ) : (
-          <FourthTab />
+          <>
+            <FourthTab />
+            <Techy />
+          </>
         )}
       </div>
     </div>

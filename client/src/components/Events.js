@@ -4,7 +4,12 @@ import "../sass/main.css";
 
 const Events = () => {
   return (
-    <div className="events">
+    <div
+      className="events"
+      style={{
+        backgroundColor: "#121212",
+      }}
+    >
       <Tabs />
     </div>
   );

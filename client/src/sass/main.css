@@ -1086,13 +1086,13 @@ body {
 
 .sponsors__heading {
   font-size: 4rem;
-  border-bottom: 2px solid #2c3333;
+  border-bottom: 2px solid #1b1a17;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 15rem;
-  color: #2c3333;
+  color: #1b1a17;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1123,7 +1123,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1b1a17;
   border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
@@ -1211,5 +1210,9 @@ body {
 
 .text-gold {
   color: #ffb900;
+}
+
+.divLoader {
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */
