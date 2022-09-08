@@ -17,22 +17,22 @@ const Schedule = () => {
   };
   return (
     <div className="Tabs2 events">
-      <h2 className="heading-secondary leaderboard__heading">Schedule</h2>
-      <ul className="nav2">
+      <h2 className="heading-secondary schedule__heading">Schedule</h2>
+      <ul className="nav2 text-gold">
         <li
-          className={activeTab === "sports" ? "active" : ""}
+          className={activeTab === "sports" ? "active text-black" : ""}
           onClick={handleTab1}
         >
           Sports
         </li>
         <li
-          className={activeTab === "culti" ? "active" : ""}
+          className={activeTab === "culti" ? "active text-black" : ""}
           onClick={handleTab2}
         >
           Culty
         </li>
         <li
-          className={activeTab === "techy" ? "active" : ""}
+          className={activeTab === "techy" ? "active text-black" : ""}
           onClick={handleTab3}
         >
           Techy

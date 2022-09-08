@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   line-height: 1.7;
   color: $color-grey-dark;
 }
@@ -12,10 +13,12 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
   &--main {
+    font-family: "Playfair Display", sans-serif;
     display: block;
     font-size: 8rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 3.5rem;
+    margin-bottom: 1rem;
     @include respond(phone) {
       letter-spacing: 1rem;
       font-size: 4rem;
@@ -25,10 +28,12 @@ body {
     display: block;
     font-size: 2rem;
     width: 50rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.6rem;
+    line-height: 3rem;
     @include respond(phone) {
       letter-spacing: 0.5rem;
+
       font-size: 1.3rem;
       width: 30rem;
     }

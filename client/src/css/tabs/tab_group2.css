@@ -58,7 +58,6 @@ ul.nav2 li:nth-child(2) {
 }
 ul.nav2 li:hover {
   transform: translateY(-3px);
-  background-color: white;
 }
 ul.nav2 li.active {
   background: #ffc93c;

@@ -19,14 +19,14 @@ const Members = () => {
           <h2 className="heading-secondary members__heading main  overall">
             Overall coordinator
           </h2>
-          <ImageDiv image={teamData.Minhaz_Nawas} name="M Nawas" />
+          <ImageDiv image={teamData.Minhaz_Nawas} name="Minhaz" />
         </div>
         <h2 className="heading-secondary members__heading main">Heads</h2>
         <div>
           <h2 className="heading-secondary members__heading">
             Sponsorship and Finance
           </h2>
-          <ImageDiv image={teamData.MD_Adil} name="Adil Salfi" />
+
           <ImageDiv image={teamData.sreejith} name="Sreejith R R" />
         </div>
         <div>

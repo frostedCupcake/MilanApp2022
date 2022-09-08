@@ -26,6 +26,9 @@ export const match = db.define(
     gameStatus: {
       type: DataTypes.BOOLEAN,
     },
+    winner: {
+      type: DataTypes.STRING,
+    },
   },
   {
     freezeTableName: true,

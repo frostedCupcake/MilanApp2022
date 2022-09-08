@@ -20,6 +20,8 @@ export const createTeam = async (req, res) => {
   }
 };
 
+
+// PUT API for updating the score of a team.
 export const updateTeamScore = async (req, res) => {
   try {
     let check = authenticte(req.body.emailId);

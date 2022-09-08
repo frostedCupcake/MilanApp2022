@@ -22,4 +22,5 @@ router.post("/football", putFScore);
 router.post("/tennis", putTScore);
 router.post("/cricket", putCScore);
 
+
 export default router;

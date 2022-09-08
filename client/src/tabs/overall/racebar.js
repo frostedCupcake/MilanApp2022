@@ -8,146 +8,34 @@ class App extends Component {
   componentDidMount() {
   
     let allData = {
-      "0":{
-        "A": 100,
-        "B": 90,
-        "C": 10,
-        "D": 5,
-        "E": 8,
-        "F": 30,
-        "G":40,
-        "H": 60,
+      "8":{
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G":0,
+        "H": 0,
         "I":0,
         "J":0,
-        "R": 30,
-        "K":80
+        "R": 0,
+        "K":0
        },
-        "1":{
-         "A": 20,
-         "B": 15,
-         "C": 20,
-         "D": 20,
-         "E": 20,
-         "F": 15,
-         "G": 15,
-         "H": 15,
-         "I": 15,
-         "J": 15,
-         "R": 15,
-         "K": 15
-        },
-        "2":{
-         "A": 40,
-         "B": 20,
-         "C": 34,
-         "D": 20,
-         "E": 30,
-         "F": 20,
-         "G": 20,
-         "H": 20,
-         "I": 20,
-         "J": 20,
-         "R": 20,
-         "K": 20
-        },
-        "3":{
-         "A": 45,
-         "B": 20,
-         "C": 34,
-         "D": 40,
-         "E": 45,
-         "F": 20,
-         "G": 20,
-         "H": 20,
-         "I": 25,
-         "J": 34,
-         "R": 20,
-         "K": 20
-        },
-        "4":{
-         "A": 60,
-         "B": 40,
-         "C": 35,
-         "D": 40,
-         "E": 55,
-         "F": 50,
-         "G": 50,
-         "H": 50,
-         "I": 50,
-         "J": 50,
-         "R": 34,
-         "K": 22
-        },
-        "5":{
-         "A": 70,
-         "B": 90,
-         "C": 36,
-         "D": 60,
-         "E": 79,
-         "F": 120,
-         "G": 68,
-         "H": 75,
-         "I": 68,
-         "J": 88,
-         "R": 67,
-         "K": 70
-        },
-       "6": {
-         "A": 90,
-         "B": 100,
-         "C": 80,
-         "D": 80,
-         "E": 80,
-         "F": 121,
-         "G": 98,
-         "H": 89,
-         "I": 70,
-         "J": 98,
-         "R": 94,
-         "K": 98
-        },
-        "7":{
-         "A": 100,
-         "B": 108,
-         "C": 105,
-         "D": 90,
-         "E": 90,
-         "F": 126,
-         "G": 105,
-         "H": 105,
-         "I": 88,
-         "J": 108,
-         "R": 105,
-         "K": 102
-        },
-       "8": {
-         "A": 101,
-         "B": 111,
-         "C": 135,
-         "D": 100,
-         "E": 100,
-         "F": 127,
-         "G": 120,
-         "H": 120,
-         "I": 90,
-         "J": 110,
-         "R": 130,
-         "K": 120
-        },
-       "9": {
-         "A": 102,
-         "B": 115,
-         "C": 150,
-         "D": 120,
-         "E": 107,
-         "F": 130,
-         "G": 129,
-         "H": 122,
-         "I": 99,
-         "J": 113,
-         "R": 134,
-         "K": 123
-        }
+      "9":{
+        "A": 10,
+        "B": 10,
+        "C": 10,
+        "D": 10,
+        "E": 10,
+        "F": 10,
+        "G":10,
+        "H": 10,
+        "I":10,
+        "J":10,
+        "R": 10,
+        "K":10
+       }
        
     };
     
@@ -241,7 +129,7 @@ class App extends Component {
       shadowBlur: 8,
      
     });
-  
+    
     // Rounded corners for columns
     series.columns.template.setAll({ cornerRadiusBR: 0, cornerRadiusTR: 0 });
     
@@ -313,6 +201,7 @@ class App extends Component {
       paddingBottom: 0
     }));
     
+    
     // Axis sorting
     function sortCategoryAxis() {
       // sort by value
@@ -354,13 +243,13 @@ class App extends Component {
       });
     }
     
-    let year =0;
+    let year =8;
     
     // update data with values each 1.5 sec
     let interval = setInterval(function () {
       year++;
     
-      if (year > 9) {
+      if (year > 18) {
         clearInterval(interval);
         clearInterval(sortInterval);
       }

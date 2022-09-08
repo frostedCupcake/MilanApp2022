@@ -3,10 +3,6 @@ import FirstTab from "../overall/sports_boys";
 import SecondTab from "../overall/sports_girls";
 import ThirdTab from "../overall/culty";
 import FourthTab from "../overall/techy";
-import Culty from "../../components/culti/Scores";
-import Techy from "../../components/techy/Scores";
-import SportB from "../../components/sports/ScoresB";
-import SportG from "../../components/sports/ScoresG";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -59,25 +55,13 @@ const Tabs = () => {
 
       <div className="outlet">
         {activeTab === "tab1" ? (
-          <>
-            <FirstTab />
-            <SportB />
-          </>
+          <FirstTab />
         ) : activeTab === "tab2" ? (
-          <>
-            <SecondTab />
-            <SportG />
-          </>
+          <SecondTab />
         ) : activeTab === "tab3" ? (
-          <>
-            <ThirdTab />
-            <Culty />
-          </>
+          <ThirdTab />
         ) : (
-          <>
-            <FourthTab />
-            <Techy />
-          </>
+          <FourthTab />
         )}
       </div>
     </div>

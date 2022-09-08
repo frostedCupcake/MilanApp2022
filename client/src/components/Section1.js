@@ -14,11 +14,11 @@ const Section1 = () => {
           </h3>
           <p className="left__about">
             "Milan" is the annual techno-cultural-sports General Championship of
-            IIT Hyderabad. It consists of 16 Sports, 19 Cultural and 9 technical
-            events conducted between all the hostel blocks. In this second
-            edition of Milan, presented by SBI YONO, the sports, cultural, and
-            technical events will start from 25th February and will conclude on
-            6th March
+            IIT Hyderabad. It consists of 19 Sports, 18 Cultural and 11
+            technical events conducted between all the hostel blocks. In this
+            second edition of Milan, presented by SBI YONO, the sports,
+            cultural, and technical events will start from 9th September and
+            will conclude on 18th September
           </p>
         </div>
         <div class="composition">
