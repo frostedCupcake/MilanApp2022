@@ -25,61 +25,91 @@ function Schedule() {
       mode: "dark",
     },
   });
-  const [scores, setscores] = useState([]);
+  const [scores, setscores] = useState({
+    "9/09/2022": [{ Time: "", Event: "", Venue: "" }],
+    "10/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "11/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "12/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "13/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "14/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "15/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "16/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+    "17/09/2022": [{ Time: "", Event: "", Venue: "" }],
+    "18/09/2022": [
+      {
+        Time: "",
+        Event: "",
+        Venue: "",
+      },
+    ],
+  });
 
-  // const scores = [
-  //   {
-  //     "25/02": [
-  //       {
-  //         Time: "6pm",
-  //         Event: "Batminton",
-  //         Venue: "Ground",
-  //         Results: "Ramanuja",
-  //       },
-  //       {
-  //         Time: "6pm",
-  //         Event: "Batminton",
-  //         Venue: "Ground",
-  //         Results: "Ramanuja",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     "08/09": [
-  //       {
-  //         Time: "7pm",
-  //         Event: "Tennis",
-  //         Venue: "Ground",
-  //         Results: "Vyasa",
-  //       },
-  //     ],
-  //   },
-  // ];
   console.log(scores);
   const d = new Date();
   let month = (d.getMonth() + 1).toString();
   let date = d.getDate().toString();
-  let today =
-    month === "2" ? date + "/" + 0 + month : 0 + date + "/" + 0 + month;
+  let today = date + "/" + 0 + month + "/2022";
 
   const tableHeaders = ["Event", "Venue", "Results"].map((el) =>
     el.toUpperCase()
   );
   const Dates = [
-    "25/02",
-    "08/09",
-    "27/02",
-    "28/02",
-    "01/03",
-    "02/03",
-    "03/03",
-    "04/03",
-    "05/03",
-    "07/09",
+    "9/09/2022",
+    "10/09/2022",
+    "11/09/2022",
+    "12/09/2022",
+    "13/09/2022",
+    "14/09/2022",
+    "15/09/2022",
+    "16/09/2022",
+    "17/09/2022",
+    "18/09/2022",
   ];
   let itemRows = [];
 
-  for (var event in scores) {
+  for (var event = 0; event < 10; event++) {
     let scheduleDate = Dates[event];
     const rows = scores[scheduleDate];
     const item = (
@@ -157,17 +187,16 @@ function Schedule() {
     );
     itemRows.push(item);
   }
-  //    useEffect(()=>{
-  //     Axios.get('https://gymkhana.iith.ac.in/milanbackend/schedule/techy').then((response)=>{
-  //         setscores(response.data);
-  //     })
-  //        setInterval(()=>{
-  //         Axios.get('https://gymkhana.iith.ac.in/milanbackend/schedule/techy').then((response)=>{
-  //             setscores(response.data);
-  //         })
-  //        },5000)
-
-  // },[])
+  useEffect(() => {
+    Axios.get("http://localhost:8080/schedule/techy").then((response) => {
+      setscores(response.data);
+    });
+    setInterval(() => {
+      Axios.get("http://localhost:8080/schedule/techy").then((response) => {
+        setscores(response.data);
+      });
+    }, 5000);
+  }, []);
 
   return (
     <Box
